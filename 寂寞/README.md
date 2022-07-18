@@ -1,2 +1,0 @@
-# AVFoundationDemo
-AVFoundationDemo
