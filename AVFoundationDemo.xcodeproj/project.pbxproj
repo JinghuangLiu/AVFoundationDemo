@@ -16,6 +16,8 @@
 		48C7EAD5269C1993004E2612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C7EAD3269C1993004E2612 /* LaunchScreen.storyboard */; };
 		48C7EAE3269C2395004E2612 /* CapturingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7EAE2269C2395004E2612 /* CapturingVC.swift */; };
 		48C7EAE5269C23A9004E2612 /* ProcessingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7EAE4269C23A9004E2612 /* ProcessingVC.swift */; };
+		48C99EC528913E1800EF0B17 /* MetalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C99EC428913E1800EF0B17 /* MetalVC.swift */; };
+		48C99EC928913E6300EF0B17 /* OpenGLESVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C99EC828913E6300EF0B17 /* OpenGLESVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		48C7EAD6269C1993004E2612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C7EAE2269C2395004E2612 /* CapturingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingVC.swift; sourceTree = "<group>"; };
 		48C7EAE4269C23A9004E2612 /* ProcessingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingVC.swift; sourceTree = "<group>"; };
+		48C99EC428913E1800EF0B17 /* MetalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalVC.swift; sourceTree = "<group>"; };
+		48C99EC628913E6300EF0B17 /* AVFoundationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVFoundationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		48C99EC728913E6300EF0B17 /* OpenGLESVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLESVC.h; sourceTree = "<group>"; };
+		48C99EC828913E6300EF0B17 /* OpenGLESVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				48C7EAE2269C2395004E2612 /* CapturingVC.swift */,
+				48C99EC428913E1800EF0B17 /* MetalVC.swift */,
+				48C99EC728913E6300EF0B17 /* OpenGLESVC.h */,
+				48C99EC828913E6300EF0B17 /* OpenGLESVC.m */,
+				48C99EC628913E6300EF0B17 /* AVFoundationDemo-Bridging-Header.h */,
 			);
 			path = Capturing;
 			sourceTree = "<group>";
@@ -163,6 +173,7 @@
 				TargetAttributes = {
 					48C7EAC4269C1992004E2612 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -203,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C99EC928913E6300EF0B17 /* OpenGLESVC.m in Sources */,
+				48C99EC528913E1800EF0B17 /* MetalVC.swift in Sources */,
 				48C7EACD269C1992004E2612 /* ViewController.swift in Sources */,
 				48C7EAC9269C1992004E2612 /* AppDelegate.swift in Sources */,
 				48C7EAE3269C2395004E2612 /* CapturingVC.swift in Sources */,
@@ -354,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97DW55HLWV;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
@@ -363,6 +377,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.migu.AVFoundationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AVFoundationDemo/Capturing/AVFoundationDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97DW55HLWV;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
@@ -382,6 +399,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.migu.AVFoundationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AVFoundationDemo/Capturing/AVFoundationDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

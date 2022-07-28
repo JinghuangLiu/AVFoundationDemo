@@ -15,7 +15,7 @@ class AudioPlayerVC: UIViewController {
     lazy var playB:UIButton = {
         let b = UIButton()
         b.setTitle("播放", for: .normal)
-        b.backgroundColor = .yellow
+        b.backgroundColor = .blue
         b.addTarget(self, action: #selector(action), for: .touchUpInside)
         return b
     }()
